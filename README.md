@@ -1,3 +1,5 @@
+<img src="https://github.com/Dynamo-Dream/A_Star_ALgo/blob/main/visual.png" alt="Example Image" width="500" height="500">
+
 ## Summary of A* Search Algorithm
 
 The A* search algorithm is a widely-used pathfinding algorithm in computer science and artificial intelligence. It is an extension of Dijkstra's algorithm with a heuristic added to improve efficiency. A* is particularly useful in scenarios where finding the shortest path from a starting point to a goal is required, such as in route planning or game AI.
@@ -19,5 +21,5 @@ Here's a brief overview of the visualization:
 
 This implementation not only serves as a demonstration of the A* search algorithm but also provides a valuable tool for understanding its behavior and performance in different scenarios. Users can experiment with different grid layouts, obstacle configurations, and heuristic functions to gain insights into how these factors affect the algorithm's efficiency and the resulting path.
 #### The Motivation and Help was taken from Youtube Video A* Pathfinding Visualization of Channel Tech With Tim
-<img src="https://github.com/Dynamo-Dream/A_Star_ALgo/blob/main/visual.png" alt="Example Image" width="500" height="500">
+
 
