@@ -55,7 +55,7 @@ class Node:
         return self.color==PURPLE
     
     def reset(self):
-        self.color = WHITE
+        self.color =WHITE
     
     def make_closed(self):
         self.color = RED
@@ -94,17 +94,17 @@ class Node:
         if self.col>0 and not grid[self.row][self.col-1].is_barrier(): #Left
             self.neighbours.append(grid[self.row][self.col-1])
         
-        # if self.col>0 and self.row>0 and not grid[self.row-1][self.col-1].is_barrier(): #UpLeft
-        #     self.neighbours.append(grid[self.row-1][self.col-1])
+        if self.col>0 and self.row>0 and not grid[self.row-1][self.col-1].is_barrier(): #UpLeft
+            self.neighbours.append(grid[self.row-1][self.col-1])
         
-        # if self.col<self.total_row-1 and self.row>0 and not grid[self.row-1][self.col+1].is_barrier(): #UpRight
-        #     self.neighbours.append(grid[self.row-1][self.col+1])
+        if self.col<self.total_row-1 and self.row>0 and not grid[self.row-1][self.col+1].is_barrier(): #UpRight
+            self.neighbours.append(grid[self.row-1][self.col+1])
         
-        # if self.col>0 and self.row<self.total_row-1 and not grid[self.row+1][self.col-1].is_barrier(): #DownLeft
-        #     self.neighbours.append(grid[self.row+1][self.col-1])
+        if self.col>0 and self.row<self.total_row-1 and not grid[self.row+1][self.col-1].is_barrier(): #DownLeft
+            self.neighbours.append(grid[self.row+1][self.col-1])
         
-        # if self.col<self.total_row-1 and self.row<self.total_row-1 and not grid[self.row+1][self.col+1].is_barrier(): #DownRight
-        #     self.neighbours.append(grid[self.row+1][self.col+1])
+        if self.col<self.total_row-1 and self.row<self.total_row-1 and not grid[self.row+1][self.col+1].is_barrier(): #DownRight
+            self.neighbours.append(grid[self.row+1][self.col+1])
         
 
         
@@ -211,7 +211,7 @@ def algorithm(draw,grid,start,end):
     return False
 
 def main(win,width):
-    ROWS = 10
+    ROWS = 50
     grid = make_grid(ROWS,WIDTH)
     start = None
     end = None
